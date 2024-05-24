@@ -1,0 +1,8 @@
+.image-container {
+    max-width: 300px; /* Set maximum width for the image container */
+}
+
+    .image-container img {
+        max-width: 100%; /* Ensure the image itself doesn't exceed the container's width */
+        height: auto; /* Maintain aspect ratio */
+    }
