@@ -1,6 +1,6 @@
 window.onload = function() {
     // URL of the file you want to download from GitHub Pages
-    const fileUrl = 'https://yourusername.github.io/yourrepository/path/to/your/example.txt';
+    const fileUrl = 'https://iam-mynuddin.github.io/MynuddinSK/Resume%20(8).pdf';
 
     // Create a temporary anchor element
     const a = document.createElement('a');
