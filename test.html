@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll to Content</title>
+</head>
+<body>
+
+    <a href="#target-content">Click here to scroll to content</a>
+
+    <div style="height: 1000px; background-color: lightgray;">Some content before</div>
+
+    <div id="target-content" style="height: 500px; background-color: lightblue;">Target Content</div>
+
+    <div style="height: 1500px; background-color: lightgray;">Some content after</div>
+
+    <script>
+    // JavaScript to scroll to the target content
+    document.querySelector('a[href="#target-content"]').addEventListener('click', function(e) {
+        e.preventDefault();
+        document.getElementById('target-content').scrollIntoView({ behavior: 'smooth' });
+    });
+    </script>
+
+</body>
+</html>
