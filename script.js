@@ -1,19 +1,10 @@
 window.onload = function() {
-    // URL of the file you want to download from GitHub Pages
     const fileUrl = 'https://iam-mynuddin.github.io/MynuddinSK/Resume%20(8).pdf';
-
-    // Create a temporary anchor element
     const a = document.createElement('a');
     a.href = fileUrl;
-    a.download = 'Resume_Mynuddin';  // Name of the file to be downloaded
-
-    // Append the anchor element to the body (required for Firefox)
+    a.download = 'Resume_Mynuddin';
     document.body.appendChild(a);
-
-    // Programmatically click the anchor element
-    a.click();
-
-    // Remove the anchor element from the document
+    //a.click();//pending
     document.body.removeChild(a);
 };
 
@@ -30,4 +21,22 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 function openGoogleForm(){
     window.open('https://forms.gle/MKCop3yjCXzD4jMy8','_blank')
+}
+
+function openGithub(name) {
+    let url = '';
+    switch (name) {
+        case 'ReactApp':
+            url = 'https://github.com/iam-mynuddin/ReStore';
+            
+        case 'AngularApp':
+            url = 'https://github.com/iam-mynuddin/CollegeManagement';
+            
+        case 'AspApp':
+            url = 'https://github.com/iam-mynuddin/ShoppingApplication';
+        window.open(url, '_blank')
+    }
+}
+function openProject(name) {
+    alert("Sorry, I have not deployed this project yet!");
 }
