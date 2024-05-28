@@ -7,6 +7,14 @@ window.onload = function() {
     //a.click();//pending
     document.body.removeChild(a);
 };
+$('[data-bs-toggle="collapse"]').on('click', function () {
+    let icon = $('#toggle-icon');
+    if (icon.hasClass('fa-arrow-down')) {
+        icon.removeClass('fa-arrow-down').addClass('fa-arrow-up');
+    } else {
+        icon.removeClass('fa-arrow-up').addClass('fa-arrow-down');
+    }
+});
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
