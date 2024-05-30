@@ -7,9 +7,7 @@
     <link rel="shortcut icon" href="emoji.png" type="image/x-icon">
     <title>Mynuddin SK</title>
     <link rel="stylesheet" href="styles.css">
-
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" rel="stylesheet">
-
     <link rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"
           integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
@@ -24,37 +22,89 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-primary fw-bold">
-            <div class="circle-container">
-                <img src="myFace-removebg-preview.png" alt="My Face" class="img-fluid circle-image">
-            </div>
-            <a class="text-white navbar-brand  ">Mynuddin SK</a>
 
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav ">
-                    <li class="nav-item">
-                        <a href="#sectionProjects" class="text-white nav-link">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#sectionExperience" class="text-white nav-link">Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#sectionEducation" class="text-white nav-link">Education</a>
-                    </li>
-                </ul>
+        <nav class="navbar navbar-expand-lg fw-bold">
+        <img src="source4.jpg" class="header-background" >
+        <!--<img src="@sk.mynuddin.png" class="header-background" alt="Blurred Background Image">-->
+            <div class="container-fluid">
+                <div class="circle-container">
+                    <img src="myFace-removebg-preview.png" alt="My Face" class="img-fluid circle-image">
+                </div>
+                <a class="navbar-brand " style="color:white ">Mynuddin SK</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sectionProjects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sectionExperience">Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sectionEducation">Education</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav" style="margin-left:auto;">
+                        <li class="nav-item" >
+                            <a class="nav-link social-icons" onclick="openProfile('ln')">
+                                <i class="fa-brands fa-linkedin fa-2x" ></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link social-icons" onclick="openProfile('fb')">
+                                <i class="fa-brands fa-facebook fa-2x"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link social-icons" onclick="openProfile('ig')">
+                                <i class="fa-brands fa-instagram fa-2x" ></i>
+                            </a>
+
+                        </li>
+                        <li class="nav-item social-icons" onclick="openProfile('mail')">
+                            <a class="nav-link">
+                                <i class="fa-solid fa-envelope fa-2x" ></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <!--<div class="text-white m-3 ">
+        </nav>
+        <!--<nav class="navbar navbar-expand-lg bg-primary fw-bold">
+        <div class="circle-container">
+            <img src="myFace-removebg-preview.png" alt="My Face" class="img-fluid circle-image">
+        </div>
+        <a class="text-white navbar-brand">Mynuddin SK</a>
+
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ">
+                <li class="nav-item">
+                    <a href="#sectionProjects" class="text-white nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#sectionExperience" class="text-white nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#sectionEducation" class="text-white nav-link">Education</a>
+                </li>
+            </ul>
+        </div>-->
+        <!--<div class="text-white m-3 ">
         <div>People visited today: 6</div>
         <div>Total visits: 678</div>
     </div>-->
-        </nav>
+        <!--</nav>-->
     </header>
 
     <div class="container-fluid body" style="min-height: 600px;">
         <div class="row">
-            <div class="col-12 marquee-container">
-                <div>
-                    <marquee>Work smart, work hard, and achieve greatness. Intelligence makes the plan, but diligence brings it to life..!</marquee>
+            <div class="col-12 ">
+                <div class="marquee-container">
+                    <h4>
+                        <marquee class="text-primary">Work smart, work hard, and achieve greatness. Intelligence makes the plan, but diligence brings it to life..!</marquee>
+                    </h4>
                 </div>
             </div>
         </div>
@@ -70,9 +120,9 @@
                 <li class="col-6 nav-item" role="presentation">
                     <button class="col-12 nav-link fw-bold" onclick="openGoogleForm()">
                         <!--id="pills-contact-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
-                        aria-selected="false"-->
-                        Write to me
+                    data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                    aria-selected="false"-->
+                        Click here to write to me
                     </button>
                 </li>
             </ul>
@@ -80,7 +130,7 @@
                 <div class="tab-pane fade show active" id="pills-about" role="tabpanel" aria-labelledby="pills-about-tab">
                     <div class="row">
                         <div class="col-lg-6 col-sm-12 pl-2">
-                            <ul class="list-group mt-3">
+                            <ul class="list-group">
                                 <li class="list-group-item">
                                     <span class=""><strong>Name:</strong></span>
                                     <span class="">Shaik Khaja Mynuddin</span>
@@ -104,7 +154,7 @@
                             </ul>
                         </div>
                         <div class="col-lg-6 col-sm-12 pl-2">
-                            <ul class="list-group mt-3">
+                            <ul class="list-group">
                                 <li class="list-group-item">
                                     <span class=""><strong>Location:</strong></span>
                                     <span class="">Bangalore,India</span>
@@ -131,14 +181,116 @@
                 </div>
             </div>
         </div>
+
+        <div id="sectionSkills" class="section-content">
+            <div class="">
+                <h2 class="text-center">Skills</h2> 
+                <div class="skill-list">
+                    <div class="skill-item">
+                        <h4>HTML & CSS</h4>
+                        <p>3+ years of experience</p>
+                        <div class="rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <h4>JavaScript</h4>
+                        <p>3+ years of experience</p>
+                        <div class="rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star empty">&#9733;</span>
+                            <span class="star empty">&#9733;</span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <h4>C# Programming</h4>
+                        <p>3+ years of experience</p>
+                        <div class="rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star empty">&#9733;</span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <h4>Asp.Net Core</h4>
+                        <p>3+ years of experience</p>
+                        <div class="rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star half">&#9733;</span>
+                            <span class="star empty">&#9733;</span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <h4>React</h4>
+                        <p>2+ years of experience</p>
+                        <div class="rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star empty">&#9733;</span>
+                            <span class="star empty">&#9733;</span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <h4>SQL Server</h4>
+                        <p>3+ years of experience</p>
+                        <div class="rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star empty">&#9733;</span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <h4>DevOps</h4>
+                        <p>3+ years of experience</p>
+                        <div class="rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star empty">&#9733;</span>
+                            <span class="star empty">&#9733;</span>
+                            <span class="star empty">&#9733;</span>
+                            <span class="star empty">&#9733;</span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <h4>JQuery & Ajax</h4>
+                        <p>3+ years of experience</p>
+                        <div class="rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star empty">&#9733;</span>
+                            <span class="star empty">&#9733;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div id="sectionProjects">
-            <div class="container-fluid mt-5">
+            <div class="container-fluid" style="background-color: #f4f7f6;">
                 <h2 class="text-center">Projects</h2>
                 <div class="row mt-4">
-
                     <div id="ecomReact" class="col-12 mb-4">
                         <div class="card">
                             <div class="card-body">
+                                <div class="card-title project-title">
+                                    <h4>
+                                        <span>
+                                            E-Commerce Application using React and Asp.Net Core Web Api (REST)
+                                        </span>
+                                    </h4>
+                                </div>
                                 <div class="project-image">
                                     <div class="row">
                                         <div class="col-12 p-1">
@@ -149,20 +301,16 @@
                                     </div>
                                 </div>
                                 <div class="project-content pt-2">
-                                    <div class="card-title project-title">
-                                        <h4>
-                                            <span>
-                                                E-Commerce Application using React and Asp.Net Core Web Api (REST)
-                                            </span>
-                                        </h4>
-                                    </div>
-                                    <p class="card-text">                                       
-                                        <div class="overview-container">
-                                            <h4>Overview</h4>
-                                            <p>This is a robust and dynamic shopping application designed to provide users with a seamless online shopping experience. Built with the latest technologies, this project integrates ASP.NET Core Web API for a powerful backend, and React with Redux for a responsive and state-managed frontend. The application utilizes Material UI for an elegant and user-friendly interface. Users can easily register and authenticate using Microsoft Identity, ensuring secure access and smooth transactions.</p>
-                                        </div>
+
+                                    <p class="card-text">
+                                        <div>
+                                            <div class="overview-container">
+                                                <h4>Overview</h4>
+                                                <p>This is a robust and dynamic shopping application designed to provide users with a seamless online shopping experience. Built with the latest technologies, this project integrates ASP.NET Core Web API for a powerful backend, and React with Redux for a responsive and state-managed frontend. The application utilizes Material UI for an elegant and user-friendly interface. Users can easily register and authenticate using Microsoft Identity, ensuring secure access and smooth transactions.</p>
+                                            </div>
                                             <div class="">
-                                                <button class="btn btn-outline-primary w-100" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEcomReact" aria-expanded="false" aria-controls="collapseExample">
+                                                <button class="btn btn-outline-primary w-100" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEcomReact"
+                                                        aria-expanded="false" aria-controls="collapseExample">
                                                     <div class="button-content">
                                                         <span class="fw-bold">More about this project:</span>
                                                         <span id="toggle-icon" class="fa fa-arrow-down"></span>
@@ -284,21 +432,21 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            
+
                                                             <div class="row">
                                                                 <div class="conclusion-container">
                                                                     <h4>Conclusion</h4>
                                                                     <p>This application is a comprehensive shopping application that leverages modern web technologies to provide a secure, user-friendly, and efficient shopping experience. The integration of ASP.NET Core Web API, React, Redux, and Material UI ensures a robust, scalable, and visually appealing platform for both users and administrators.</p>
 
                                                                 </div>
-                                                                
+
                                                             </div>
-                                                            
+
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-
+                                        </div>
 
                                     </p>
                                     <div class="row">
@@ -313,6 +461,13 @@
                     <div id="ecomAsp" class="col-12 mb-4">
                         <div class="card">
                             <div class="card-body">
+                                <div class="card-title project-title">
+                                    <h4>
+                                        <span>
+                                            E-Commerce Application using Asp.Net Core MVC
+                                        </span>
+                                    </h4>
+                                </div>
                                 <div class="project-image">
                                     <div class="row">
                                         <div class="col-12 p-1">
@@ -322,16 +477,17 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="project-content pt-3">
-                                    <h4 class="card-title">E-Commerce Application Asp.Net Core MVC</h4>
+                                <div class="project-content pt-2">
                                     <p class="card-text">
                                         <div>
-                                            <h4>Overview</h4>
-                                            <p>This is a robust and dynamic shopping application designed to provide users with a seamless online shopping experience. Built with the latest technologies, this project integrates ASP.NET Core Web API for a powerful backend, and React with Redux for a responsive and state-managed frontend. The application utilizes Material UI for an elegant and user-friendly interface. Users can easily register and authenticate using Microsoft Identity, ensuring secure access and smooth transactions.</p>
+                                            <div class="overview-container">
+                                                <h4>Overview</h4>
+                                                <p>This is a robust and dynamic shopping application designed to provide users with a seamless online shopping experience. Built with the latest technologies, this project integrates ASP.NET Core Web API for a powerful backend, and React with Redux for a responsive and state-managed frontend. The application utilizes Material UI for an elegant and user-friendly interface. Users can easily register and authenticate using Microsoft Identity, ensuring secure access and smooth transactions.</p>
+                                            </div>
                                             <div class="">
                                                 <button class="btn btn-outline-primary w-100" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEcomAsp" aria-expanded="false" aria-controls="collapseExample">
                                                     <div class="button-content">
-                                                        <span>More about this project:</span>
+                                                        <span class="fw-bold">More about this project:</span>
                                                         <span id="toggle-icon" class="fa fa-arrow-down"></span>
                                                     </div>
                                                 </button>
@@ -339,7 +495,7 @@
                                                     <div class="card card-body">
                                                         <div>
                                                             <div class="row">
-                                                                <div class="col-lg-6 col-sm-12">
+                                                                <div class="col-lg-6 col-sm-12 tech-container">
 
                                                                     <h4>Technologies used</h4>
                                                                     <ul>
@@ -377,8 +533,7 @@
                                                                         </li>
                                                                     </ul>
                                                                 </div>
-                                                                <div class="col-lg-6 col-sm-12">
-
+                                                                <div class="col-lg-6 col-sm-12 tech-container">
                                                                     <h4>Features</h4>
                                                                     <ul>
                                                                         <li>
@@ -425,44 +580,46 @@
                                                                         </li>
                                                                     </ul>
                                                                 </div>
-
                                                             </div>
 
+                                                            <div class="row project-structure-container">
+                                                                <h4>Project Structure</h4>
+                                                                <div class="row">
+                                                                    <div class="col-lg-6 col-sm-12">
 
-                                                            <h4>Project Structure</h4>
-                                                            <div class="row">
-                                                                <div class="col-lg-6 col-sm-12">
+                                                                        <h5>Backend (ASP.NET Core Web API)</h5>
+                                                                        <ul>
+                                                                            <li><strong>Controllers</strong>: Handle HTTP requests and responses.</li>
+                                                                            <li><strong>Services</strong>: Business logic and data manipulation.</li>
+                                                                            <li><strong>Repositories</strong>: Data access layer for interacting with the database.</li>
+                                                                            <li><strong>Models</strong>: Define the structure of the data.</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <div class="col-lg-6 col-sm-12">
 
-                                                                    <h5>Backend (ASP.NET Core Web API)</h5>
-                                                                    <ul>
-                                                                        <li><strong>Controllers</strong>: Handle HTTP requests and responses.</li>
-                                                                        <li><strong>Services</strong>: Business logic and data manipulation.</li>
-                                                                        <li><strong>Repositories</strong>: Data access layer for interacting with the database.</li>
-                                                                        <li><strong>Models</strong>: Define the structure of the data.</li>
-                                                                    </ul>
-                                                                </div>
-                                                                <div class="col-lg-6 col-sm-12">
+                                                                        <h5>Frontend (React + Redux)</h5>
+                                                                        <ul>
+                                                                            <li><strong>Components</strong>: Reusable UI elements built with Material UI.</li>
+                                                                            <li><strong>Redux Store</strong>: Centralized state management.</li>
+                                                                            <li><strong>Actions</strong>: Dispatch actions to modify the state.</li>
+                                                                            <li><strong>Reducers</strong>: Handle state changes based on actions.</li>
+                                                                        </ul>
 
-                                                                    <h5>Frontend (React + Redux)</h5>
-                                                                    <ul>
-                                                                        <li><strong>Components</strong>: Reusable UI elements built with Material UI.</li>
-                                                                        <li><strong>Redux Store</strong>: Centralized state management.</li>
-                                                                        <li><strong>Actions</strong>: Dispatch actions to modify the state.</li>
-                                                                        <li><strong>Reducers</strong>: Handle state changes based on actions.</li>
-                                                                    </ul>
-
+                                                                    </div>
                                                                 </div>
                                                             </div>
+                                                            <div class="row conclusion-container">
 
-                                                            <h4>Conclusion</h4>
-                                                            <p>This application is a comprehensive shopping application that leverages modern web technologies to provide a secure, user-friendly, and efficient shopping experience. The integration of ASP.NET Core Web API, React, Redux, and Material UI ensures a robust, scalable, and visually appealing platform for both users and administrators.</p>
-                                                        </div>
+                                                                <h4>Conclusion</h4>
+                                                                <p>This application is a comprehensive shopping application that leverages modern web technologies to provide a secure, user-friendly, and efficient shopping experience. The integration of ASP.NET Core Web API, React, Redux, and Material UI ensures a robust, scalable, and visually appealing platform for both users and administrators.</p>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
+                                            </div>
                                         </div>
 
-</p>
+                                    </p>
                                     <div class="row">
                                         <a class="col-6 btn btn-outline-primary" onclick="openGithub('ReactApp')">GitHub</a>
                                         <a class="col-6 btn btn-outline-primary" onclick="openProject('ReactApp')" title="Not yet deployed!">Go to project</a>
@@ -472,38 +629,44 @@
                             </div>
                         </div>
                     </div>
-
                     <div id="clgAng" class="col-12 mb-4">
                         <div class="card">
                             <div class="card-body">
+                                <div class="project-title">
+                                    <h4 class="card-title">
+                                        <span>
+                                            College Management Application using Angular and Asp.Net Core WebApi(REST)
+                                        </span>
+                                    </h4>
+                                </div>
                                 <div class="project-image">
                                     <div class="row">
-                                        <div class="col-12 p-1">
-                                            <div class="card border-0 p-3 shadow border-top border-5 rounded">
+                                        <div class="col-12 p-2">
+                                            <div class="card border-0 p-1 shadow border-top border-5 rounded">
                                                 <img src="paper.png" class="card-img-top" alt="Project 1">
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="project-content pt-3">
-                                    <h5 class="card-title">
-                                        College Management Application using Angular and Asp.Net Core WebApi(REST)
-                                    </h5>
                                     <p class="card-text">
-                                        <div class="">
-                                            <h4>Overview</h4>
-                                            <p>This is a comprehensive and dynamic college management application designed to provide users with a seamless and efficient way to manage various academic activities. Built with the latest technologies, this project integrates ASP.NET Core Web API for a powerful backend, Angular for a responsive and state-managed frontend, and Bootstrap for an elegant and user-friendly interface. The application uses SQL Server for robust data storage and management. Parents can view their child's marks, students and lecturers can manage assignments, and both can apply for leaves.</p>
+                                        <div>
+                                            <div class="row overview-container">
+                                                <h4>Overview</h4>
+                                                <p>This is a comprehensive and dynamic college management application designed to provide users with a seamless and efficient way to manage various academic activities. Built with the latest technologies, this project integrates ASP.NET Core Web API for a powerful backend, Angular for a responsive and state-managed frontend, and Bootstrap for an elegant and user-friendly interface. The application uses SQL Server for robust data storage and management. Parents can view their child's marks, students and lecturers can manage assignments, and both can apply for leaves.</p>
+                                            </div>
                                             <div class="">
-                                                <button class="btn btn-outline-primary w-100" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEcomAsp" aria-expanded="false" aria-controls="collapseExample">
+                                                <button class="btn btn-outline-primary w-100" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEcomAsp"
+                                                        aria-expanded="false" aria-controls="collapseExample">
                                                     <div class="button-content">
-                                                        <span>More about this project:</span>
+                                                        <span class="fw-bold">More about this project:</span>
                                                         <span id="toggle-icon" class="fa fa-arrow-down"></span>
                                                     </div>
                                                 </button>
                                                 <div class="collapse mt-3" id="collapseEcomAsp">
                                                     <div class="card card-body">
                                                         <div>
-                                                            <div class="row">
+                                                            <div class="row tech-container">
                                                                 <div class="col-lg-6 col-sm-12">
 
                                                                     <h4>Technologies used</h4>
@@ -581,41 +744,43 @@
                                                                     </ul>
                                                                 </div>
                                                             </div>
+                                                            <div class="row project-structure-container">
+                                                                <h4>Project Structure</h4>
+                                                                <div class="row">
+                                                                    <div class="col-lg-6 col-sm-12">
 
-                                                            <h4>Project Structure</h4>
-                                                            <div class="row">
-                                                                <div class="col-lg-6 col-sm-12">
+                                                                        <h5>Backend (ASP.NET Core Web API)</h5>
+                                                                        <ul>
+                                                                            <li><strong>Controllers</strong>: Handle HTTP requests and responses.</li>
+                                                                            <li><strong>Services</strong>: Business logic and data manipulation.</li>
+                                                                            <li><strong>Repositories</strong>: Data access layer for interacting with the database.</li>
+                                                                            <li><strong>Models</strong>: Define the structure of the data.</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <div class="col-lg-6 col-sm-12">
 
-                                                                    <h5>Backend (ASP.NET Core Web API)</h5>
-                                                                    <ul>
-                                                                        <li><strong>Controllers</strong>: Handle HTTP requests and responses.</li>
-                                                                        <li><strong>Services</strong>: Business logic and data manipulation.</li>
-                                                                        <li><strong>Repositories</strong>: Data access layer for interacting with the database.</li>
-                                                                        <li><strong>Models</strong>: Define the structure of the data.</li>
-                                                                    </ul>
-                                                                </div>
-                                                                <div class="col-lg-6 col-sm-12">
-
-                                                                    <h5>Frontend (Angular)</h5>
-                                                                    <ul>
-                                                                        <li><strong>Components</strong>: Reusable UI elements built with Bootstrap.</li>
-                                                                        <li><strong>Services</strong>: Centralized logic for data retrieval and manipulation.</li>
-                                                                        <li><strong>Modules</strong>: Organized code structure for better maintainability.</li>
-                                                                        <li><strong>Directives</strong>: Custom behavior to extend HTML functionalities.</li>
-                                                                    </ul>
+                                                                        <h5>Frontend (Angular)</h5>
+                                                                        <ul>
+                                                                            <li><strong>Components</strong>: Reusable UI elements built with Bootstrap.</li>
+                                                                            <li><strong>Services</strong>: Centralized logic for data retrieval and manipulation.</li>
+                                                                            <li><strong>Modules</strong>: Organized code structure for better maintainability.</li>
+                                                                            <li><strong>Directives</strong>: Custom behavior to extend HTML functionalities.</li>
+                                                                        </ul>
+                                                                    </div>
                                                                 </div>
                                                             </div>
-
-                                                            <h4>Conclusion</h4>
-                                                            <p>This application is a comprehensive college management application that leverages modern web technologies to provide a secure, user-friendly, and efficient platform for managing academic activities. The integration of ASP.NET Core Web API, Angular, Bootstrap, and SQL Server ensures a robust, scalable, and visually appealing solution for students, parents, and administrators.</p>
+                                                            <div class="row conclusion-container">
+                                                                <h4>Conclusion</h4>
+                                                                <p>This application is a comprehensive college management application that leverages modern web technologies to provide a secure, user-friendly, and efficient platform for managing academic activities. The integration of ASP.NET Core Web API, Angular, Bootstrap, and SQL Server ensures a robust, scalable, and visually appealing solution for students, parents, and administrators.</p>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            </div>
-                                        
+                                        </div>
 
-</p>
+
+                                    </p>
                                     <div class="row">
                                         <a class="col-6 btn btn-outline-primary" onclick="openGithub('AngularApp')">GitHub</a>
                                         <a class="col-6 btn btn-outline-primary" onclick="openProject('AngualrApp')" title="Not yet deployed!">Go to project</a>
@@ -628,7 +793,7 @@
                 </div>
             </div>
         </div>
-        <div id="sectionEducation">
+        <div id="sectionEducation" class="section-content">
             <div class="container-fluid">
                 <h2 class="text-center">Education</h2>
                 <div class="row">
@@ -655,7 +820,7 @@
                 </div>
             </div>
         </div>
-        <div id="sectionExperience">
+        <div id="sectionExperience" class="section-content">
             <div class="container-fluid">
                 <h2 class="text-center">Job Experience</h2>
                 <div class="row">
@@ -685,7 +850,10 @@
         </div>
     </div>
     <footer class="text-center py-3 mt-4">
-        &copy; 2024 My Website <i class="fas fa-heart"></i>
+
+        <h2>
+            Thanks for the visit <i class="fas fa-heart " style="color:red"></i>
+        </h2>
     </footer>
     <script src="script.js"></script>
 </body>

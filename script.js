@@ -45,6 +45,30 @@ function openGithub(name) {
         window.open(url, '_blank')
     }
 }
+
+function openProfile(handleName) {
+    let url = '';
+    switch (handleName) {
+        case 'fb':
+            url = 'https://www.facebook.com/iammynuddin';
+            break; // Add break statement to prevent fall-through
+        case 'ig':
+            url = 'https://www.instagram.com/sk.mynuddin/';
+            break; // Add break statement to prevent fall-through
+        case 'ln':
+            url = 'https://www.linkedin.com/in/mynuddinsk/';
+            break; // Add break statement to prevent fall-through
+        case 'mail':
+            startMail();
+    }
+    window.open(url, '_blank'); // Open the URL in a new tab
+}
+
+function startMail() {
+    alert('React out to me at mynuddin.shaik234@gmail.com');
+}
+
+
 function openProject(name) {
     alert("Sorry, I have not deployed this project yet!");
 }
