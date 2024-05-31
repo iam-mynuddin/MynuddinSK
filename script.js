@@ -1,12 +1,45 @@
 window.onload = function() {
+    console.log('Window loaded');
+};
+
+function downloadResume() {
+
+    getResume();
     const fileUrl = 'https://iam-mynuddin.github.io/MynuddinSK/Resume%20(8).pdf';
     const a = document.createElement('a');
     a.href = fileUrl;
     a.download = 'Resume_Mynuddin';
     document.body.appendChild(a);
-    //a.click();//pending
-    document.body.removeChild(a);
-};
+    a.click();//pending
+    document.body.removeChild(a);  
+}
+
+function getResume() {
+        const pdfUrl = 'https://iam-mynuddin.github.io/MynuddinSK/Resume%20(8).pdf';
+
+        fetch(pdfUrl)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok ' + response.statusText);
+                }
+                return response.blob();
+            })
+            .then(blob => {
+                const url = window.URL.createObjectURL(new Blob([blob]));
+                const a = document.createElement('a');
+                a.style.display = 'none';
+                a.href = url;
+                a.download = 'DotNet_React_MynuddinSK_Resume.pdf';
+                document.body.appendChild(a);
+                a.click();
+                window.URL.revokeObjectURL(url);
+            })
+            .catch(error => {
+                console.error('There has been a problem with your fetch operation:', error);
+            });
+    
+}
+
 $('[data-bs-toggle="collapse"]').on('click', function () {
     let icon = $('#toggle-icon');
     if (icon.hasClass('fa-arrow-down')) {
@@ -65,7 +98,7 @@ function openProfile(handleName) {
 }
 
 function startMail() {
-    alert('React out to me at mynuddin.shaik234@gmail.com');
+    alert('Reach out to me at mynuddin.shaik234@gmail.com');
 }
 
 
