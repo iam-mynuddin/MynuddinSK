@@ -15,7 +15,7 @@ function downloadResume() {
 }
 
 function getResume() {
-        const pdfUrl = 'https://iam-mynuddin.github.io/MynuddinSK/Resume%20(8).pdf';
+        const pdfUrl = 'https://iam-mynuddin.github.io/MynuddinSK/Mynuddin_SDE.pdf';
 
         fetch(pdfUrl)
             .then(response => {
