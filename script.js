@@ -15,7 +15,7 @@ function downloadResume() {
 }
 
 function getResume() {
-        const pdfUrl = 'https://iam-mynuddin.github.io/MynuddinSK/Mynuddin_SDE.pdf';
+        const pdfUrl = 'https://iam-mynuddin.github.io/MynuddinSK/Mynuddin_Resume.pdf';
 
         fetch(pdfUrl)
             .then(response => {
@@ -29,7 +29,7 @@ function getResume() {
                 const a = document.createElement('a');
                 a.style.display = 'none';
                 a.href = url;
-                a.download = 'Mynuddin_SDE.pdf';
+                a.download = 'Mynuddin_FullStackEngineer.pdf';
                 document.body.appendChild(a);
                 a.click();
                 window.URL.revokeObjectURL(url);
